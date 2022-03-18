@@ -3,69 +3,6 @@ $(() => {
 	WW = $(window).width()
 
 
-	// Карусель отзывов
-	const reviewsSliders = []
-
-	$('.reviews .swiper-container').each(function (i) {
-		$(this).addClass('reviews_s' + i)
-
-		let slides = $(this).find('.slide').length,
-			options = {
-				loop: false,
-				speed: 500,
-				simulateTouch: false,
-				allowTouchMove: true,
-				noSwiping: true,
-				spaceBetween: 20,
-				watchSlidesVisibility: true,
-				slideActiveClass: 'active',
-				slideVisibleClass: 'visible',
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev'
-				},
-				breakpoints: {
-					0: {
-						slidesPerView: 1,
-						autoHeight: true
-					},
-					1280: {
-						slidesPerView: 2,
-						autoHeight: false
-					}
-				},
-				on: {
-					init: swiper => {
-						setTimeout(() => {
-							setHeight($(swiper.$el).find('.review .data'))
-
-							$('.reviews .swiper-button-next, .reviews .swiper-button-prev').css('top', $(swiper.$el).find('.review .data').outerHeight() * 0.5)
-						})
-					},
-					resize: swiper => {
-						setTimeout(() => {
-							setHeight($(swiper.$el).find('.review .data'))
-
-							$('.reviews .swiper-button-next, .reviews .swiper-button-prev').css('top', $(swiper.$el).find('.review .data').outerHeight() * 0.5)
-						})
-					}
-				}
-			}
-
-		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
-
-		if (slides > reviewsSliders[i].params.slidesPerView) {
-			options.loop = true
-			options.simulateTouch = true
-			options.allowTouchMove = true
-			options.noSwiping = false
-
-			reviewsSliders[i].destroy(true, true)
-			reviewsSliders[i] = new Swiper('.reviews_s' + i, options)
-		}
-	})
-
-
 	// Карусель сертификатов
 	const certsSliders = []
 
@@ -132,6 +69,72 @@ $(() => {
 			$('.mob_header .mob_menu_btn').removeClass('active')
 			$('body').removeClass('menu_open')
 			$('header').removeClass('show')
+		}
+	})
+})
+
+
+
+$(window).on('load', () => {
+	// Карусель отзывов
+	const reviewsSliders = []
+
+	$('.reviews .swiper-container').each(function (i) {
+		$(this).addClass('reviews_s' + i)
+
+		let slides = $(this).find('.slide').length,
+			options = {
+				loop: false,
+				speed: 500,
+				simulateTouch: false,
+				allowTouchMove: true,
+				noSwiping: true,
+				spaceBetween: 20,
+				watchSlidesVisibility: true,
+				slideActiveClass: 'active',
+				slideVisibleClass: 'visible',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+						autoHeight: true
+					},
+					1280: {
+						slidesPerView: 2,
+						autoHeight: false
+					}
+				},
+				on: {
+					init: swiper => {
+						setTimeout(() => {
+							setHeight($(swiper.$el).find('.review .data'))
+
+							$('.reviews .swiper-button-next, .reviews .swiper-button-prev').css('top', $(swiper.$el).find('.review .data').outerHeight() * 0.5)
+						})
+					},
+					resize: swiper => {
+						setTimeout(() => {
+							setHeight($(swiper.$el).find('.review .data'))
+
+							$('.reviews .swiper-button-next, .reviews .swiper-button-prev').css('top', $(swiper.$el).find('.review .data').outerHeight() * 0.5)
+						})
+					}
+				}
+			}
+
+		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+
+		if (slides > reviewsSliders[i].params.slidesPerView) {
+			options.loop = true
+			options.simulateTouch = true
+			options.allowTouchMove = true
+			options.noSwiping = false
+
+			reviewsSliders[i].destroy(true, true)
+			reviewsSliders[i] = new Swiper('.reviews_s' + i, options)
 		}
 	})
 })

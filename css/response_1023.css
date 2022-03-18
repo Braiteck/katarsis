@@ -3,10 +3,6 @@
     /*-------------------
         Global styles
     -------------------*/
-    :root
-    {
-        --font_size_title: 28px;
-    }
 
 
 
@@ -16,16 +12,6 @@
     .fancybox__slide
     {
         padding: 24px;
-    }
-
-
-
-    /*----------------
-        Pagination
-    ----------------*/
-    .pagination
-    {
-        margin-top: 40px;
     }
 
 
@@ -142,6 +128,7 @@
     header .menu .item > a
     {
         font-size: 20px;
+        font-weight: 700;
         line-height: 24px;
 
         position: relative;
@@ -188,9 +175,7 @@
 
     .page_title
     {
-        font-size: 32px;
-
-        width: 500px;
+        width: 656px;
         margin-bottom: 12px;
     }
 
@@ -217,6 +202,13 @@
     /*----------------
         Block head
     ----------------*/
+    .block_head .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 18px;
+    }
 
 
 
@@ -254,24 +246,16 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block h2
+    .text_block
     {
-        font-size: 24px;
-
-        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
 
     .text_block .columns
     {
         column-gap: 40px;
-    }
-
-
-    .text_block figcaption
-    {
-        font-size: 15px;
-        line-height: 21px;
     }
 
 
@@ -294,7 +278,7 @@
 
     .first_section .img
     {
-        bottom: 102px;
+        bottom: 128px;
 
         width: 600px;
         height: 405px;
@@ -307,11 +291,6 @@
         width: 432px;
     }
 
-
-    .first_section .title
-    {
-        font-size: 32px;
-    }
 
     .first_section .text_block
     {
@@ -332,13 +311,6 @@
     .why .row + .row
     {
         margin-top: 80px;
-    }
-
-
-    .why .data .title
-    {
-        font-size: 20px;
-        line-height: 25px;
     }
 
 
@@ -383,7 +355,7 @@
         top: 0;
         bottom: 0;
 
-        width: 1360px;
+        width: 1700px;
         margin: auto;
 
         object-fit: cover;
@@ -396,6 +368,9 @@
     ------------*/
     .result .row
     {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
         padding: 0;
     }
 
@@ -453,18 +428,43 @@
 
     .advantages .items:before
     {
-        display: none;
+        right: auto;
+        left: 0;
     }
 
+
+
+    .advantages .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
 
     .advantages .item + .item
     {
-        margin-top: 32px;
+        margin-top: 40px;
     }
 
-    .advantages .item > *
+    .advantages .item > *,
+    .advantages .item:nth-child(2n) > *
     {
         width: 100%;
+        padding-right: 0;
+        padding-left: 100px;
+
+        text-align: left;
+    }
+
+    .advantages .item > *:after
+    {
+        right: auto;
+        left: 22px;
+    }
+
+    .advantages .item > *:before
+    {
+        right: auto;
+        left: 13px;
     }
 
 
@@ -486,20 +486,19 @@
 
     .prices .image
     {
-        display: none;
-
-        margin-top: 32px;
         margin-right: auto;
+        margin-bottom: 24px;
         margin-left: auto;
-
-        order: 2;
+        padding-top: 16px;
     }
 
 
     .prices .data
     {
         width: 100%;
-        padding-top: 12px;
+        padding-top: 0;
+
+        order: 2;
     }
 
 
@@ -516,6 +515,14 @@
     .reviews::before
     {
         height: calc(100% + 112px);
+    }
+
+
+    .reviews .text,
+    .reviews .link
+    {
+        font-size: 15px;
+        line-height: 21px;
     }
 
 
@@ -543,7 +550,7 @@
 
     .services .row > *
     {
-        width: 500px;
+        width: 580px;
         max-width: 100%;
         margin-left: 0;
     }
@@ -564,7 +571,6 @@
     {
         min-height: 452px;
         margin-top: 32px;
-        margin-bottom: 0;
         padding: 80px 0;
     }
 
@@ -575,35 +581,19 @@
 
     .quote_block.no_pad
     {
-        margin-top: -166px;
+        margin-top: -132px;
+    }
+
+
+    .quote_block .data > * + *
+    {
+        margin-top: 28px;
     }
 
 
     .quote_block .bg
     {
-        width: 1024px;
-    }
-
-
-    .quote_block .data
-    {
-        font-size: 19px;
-        line-height: 25px;
-
-        width: 700px;
-        padding-top: 60px;
-    }
-
-    .quote_block .data > * + *
-    {
-        margin-top: 20px;
-    }
-
-
-    .quote_block .icon
-    {
-        width: 60px;
-        height: 50px;
+        width: 1280px;
     }
 
 
@@ -620,10 +610,10 @@
 
     .service_info .section .title
     {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 21px;
+        line-height: 25px;
 
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
 
@@ -639,23 +629,29 @@
 
     .service_info .section .col + .col
     {
-        margin-top: 32px;
+        margin-top: 52px;
     }
 
 
     .service_info .section .name
     {
+        font-size: 17px;
+        line-height: 22px;
+
         margin-bottom: 20px;
+    }
+
+    .service_info .section .name b
+    {
+        font-size: 17px;
+        line-height: 22px;
     }
 
 
     .service_info .bottom
     {
-        font-size: 19px;
-        line-height: 27px;
-
         width: 100%;
-        margin-top: 36px;
+        margin-top: 40px;
     }
 
 
@@ -683,8 +679,17 @@
         margin-left: 0;
     }
 
+    .contacts_info .item .val
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
     .contacts_info .item .desc
     {
+        font-size: 15px;
+        line-height: 21px;
+
         margin-top: 16px;
     }
 
@@ -695,7 +700,7 @@
     ----------------*/
     .order_form
     {
-        padding: 52px 0 132px;
+        padding: 52px 0 144px;
     }
 
 
@@ -712,6 +717,12 @@
 
 
     .order_form .img
+    {
+        bottom: 88px;
+    }
+
+
+    .order_form .img.img2
     {
         bottom: 60px;
     }
@@ -743,86 +754,37 @@
     }
 
 
-    .articles .article .info
-    {
-        padding: 20px 0 0;
-    }
-
-    .articles .article .name
-    {
-        font-size: 22px;
-        line-height: calc(100% + 4px);
-    }
-
-    .articles .article .tags
-    {
-        font-size: 15px;
-        line-height: 23px;
-    }
-
-
-    .articles .grid
-    {
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-    .articles .grid > *
-    {
-        width: calc(33.333% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
-    }
-
-    .articles .grid > *.big
-    {
-        width: calc(66.666% - 16px);
-    }
-
-    .articles .grid + .row
-    {
-        margin-top: 16px;
-    }
-
-
-    .articles .article .thumb
-    {
-        padding-bottom: 240px;
-    }
-
-    .articles .article .thumb.big_h
-    {
-        padding-bottom: 496px;
-    }
-
-    .articles .grid .info
-    {
-        padding: 0;
-    }
-
-    .articles .grid .name
-    {
-        padding: 20px;
-    }
-
-    .articles .grid .tags
-    {
-        padding: 20px;
-    }
-
-
     .articles .row
     {
-        margin-bottom: -16px;
-        margin-left: -16px;
         padding: 0;
     }
 
     .articles .row > *
     {
-        width: calc(33.333% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .grid > *,
+    .articles .grid > *.big
+    {
+        width: calc(50% - 24px);
+    }
+
+    .articles .grid + .row
+    {
+        margin-top: 24px;
+    }
+
+
+    .articles .grid .article .thumb
+    {
+        padding-bottom: 320px;
+    }
+
+    .articles .grid .article .thumb.big_h
+    {
+        padding-bottom: 670px;
     }
 
 
@@ -832,7 +794,7 @@
     ----------------*/
     .about_head
     {
-        margin-bottom: 40px;
+        margin-bottom: 46px;
         padding-top: 128px;
         padding-bottom: 100px;
     }
@@ -844,21 +806,9 @@
     }
 
 
-    .about_head .item
-    {
-        margin-top: 24px;
-    }
-
-    .about_head .item .name
-    {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-
     .about_head .img
     {
-        bottom: 81px;
+        bottom: 45px;
 
         width: 600px;
         height: 405px;
@@ -872,10 +822,7 @@
     ---------------*/
     .education .block_title
     {
-        font-size: 20px;
-        line-height: 24px;
-
-        margin-bottom: 20px;
+        margin-bottom: 28px;
     }
 
 
@@ -890,9 +837,17 @@
         width: 100%;
     }
 
+    .education .item + .item,
     .education .cols .col + .col
     {
-        margin-top: 20px;
+        margin-top: 24px;
+    }
+
+
+    .education .item
+    {
+        font-size: 16px;
+        line-height: 22px;
     }
 
 
@@ -908,7 +863,7 @@
 
     .stats .bg
     {
-        width: 1024px;
+        top: -32px;
     }
 
 
@@ -920,14 +875,8 @@
 
     .stats .item
     {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .stats .item .val
-    {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 21px;
+        line-height: 27px;
     }
 
 
@@ -945,6 +894,12 @@
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        margin-top: 60px;
+    }
+
+
     footer .action
     {
         width: 600px;

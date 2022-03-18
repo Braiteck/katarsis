@@ -1903,7 +1903,7 @@ header .mob_socials .whatsapp_link .icon
     position: absolute;
     z-index: -1;
     right: 50%;
-    bottom: 125px;
+    bottom: 126px;
 
     display: block;
 
@@ -3351,23 +3351,31 @@ header .mob_socials .whatsapp_link .icon
 
 .services .service .link
 {
+    width: 100%;
+    margin-top: 29px;
+}
+
+.services .service .link a
+{
     color: #64bc62;
     font-size: 16px;
     font-weight: bold;
     line-height: 19px;
 
-    margin-top: 29px;
+    display: inline-block;
+
     padding: 8px 22px 10px;
 
     transition: .2s linear;
     text-align: center;
+    vertical-align: top;
     text-decoration: none;
 
     border: 2px solid #64bc62;
     border-radius: 5px;
 }
 
-.services .service .link:hover
+.services .service .link a:hover
 {
     color: #fff;
 
@@ -4032,7 +4040,7 @@ header .mob_socials .whatsapp_link .icon
 
 .articles .grid .info
 {
-    padding: 0;
+    padding: 0 !important;
 }
 
 
@@ -4105,9 +4113,9 @@ footer
     background: #0f6640;
 }
 
-footer.no_margin
+footer.desktop_no_margin
 {
-    margin-top: 0;
+    margin: 0;
 }
 
 
