@@ -546,6 +546,58 @@ header
 
 
 
+
+
+header > .close
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+}
+
+header > .close:before,
+header > .close:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 50%;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    background: #fff;
+}
+
+header > .close:after
+{
+    transform: rotate(-45deg);
+}
+
+header.show > .close
+{
+    display: block;
+}
+
+
+
 header .info
 {
     padding: 34px 0 29px;
@@ -1119,8 +1171,9 @@ header .mob_socials .whatsapp_link .icon
     position: relative;
     z-index: 3;
 
+    margin-bottom: -37px;
     padding-top: 209px;
-    padding-bottom: 146px;
+    padding-bottom: 200px;
 }
 
 
@@ -1129,23 +1182,15 @@ header .mob_socials .whatsapp_link .icon
     position: absolute;
     z-index: -1;
     right: 50%;
-    bottom: 126px;
+    bottom: 165px;
 
     display: block;
 
-    width: 690px;
-    height: 466px;
-    margin-right: -720px;
+    width: 929px;
+    height: 481px;
+    margin-right: -960px;
 
     pointer-events: none;
-}
-
-@media (max-width: 1372px)
-{
-    .page_head .img
-    {
-        bottom: 116px;
-    }
 }
 
 
@@ -1153,14 +1198,12 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -1;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1440px;
-    height: 462px;
-    min-height: 100%;
-    margin: auto;
+    height: 100%;
+
+    transform: translateX(-50%);
 
     object-fit: cover;
 }
@@ -1169,15 +1212,12 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -2;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1440px;
-    height: 781px;
-    margin: auto;
+    width: 1920px;
 
-    object-fit: cover;
+    transform: translateX(-50%);
 }
 
 
@@ -1224,7 +1264,7 @@ header .mob_socials .whatsapp_link .icon
 
     width: 632px;
     max-width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 
@@ -1236,7 +1276,6 @@ header .mob_socials .whatsapp_link .icon
     line-height: 18px;
 
     margin-top: 80px;
-    margin-bottom: 54px;
     padding: 0 48px;
 }
 
@@ -1823,8 +1862,8 @@ header .mob_socials .whatsapp_link .icon
     z-index: 3;
 
     margin-bottom: 12px;
-    padding-top: 204px;
-    padding-bottom: 109px;
+    padding-top: 209px;
+    padding-bottom: 172px;
 }
 
 
@@ -1832,17 +1871,13 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -2;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1440px;
-    height: auto;
-    min-height: 100%;
-    margin: auto;
+    width: auto;
+    height: 100%;
 
-    object-position: 50% 100%;
-    object-fit: cover;
+    transform: translateX(-50%);
 }
 
 
@@ -1903,13 +1938,13 @@ header .mob_socials .whatsapp_link .icon
     position: absolute;
     z-index: -1;
     right: 50%;
-    bottom: 126px;
+    bottom: 170px;
 
     display: block;
 
-    width: 690px;
-    height: 466px;
-    margin-right: -720px;
+    width: 929px;
+    height: 481px;
+    margin-right: -960px;
 
     pointer-events: none;
 }
@@ -1921,7 +1956,7 @@ header .mob_socials .whatsapp_link .icon
 ---------*/
 .why
 {
-    margin-bottom: 54px;
+    margin-bottom: 80px;
 }
 
 
@@ -1943,13 +1978,14 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -1;
-    top: -119px;
+    top: 50%;
     left: 50%;
 
-    width: 1440px;
-    height: 635px;
+    width: auto;
+    height: 688px;
+    margin-top: -16px;
 
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -2297,7 +2333,7 @@ header .mob_socials .whatsapp_link .icon
     position: relative;
     z-index: 3;
 
-    padding: 74px 0 140px;
+    padding: 99px 0 150px;
 }
 
 
@@ -2305,13 +2341,13 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -2;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1440px;
-    height: 618px;
-    margin: auto;
+    width: auto;
+    height: 659px;
+
+    transform: translateX(-50%);
 }
 
 
@@ -2320,13 +2356,13 @@ header .mob_socials .whatsapp_link .icon
     position: absolute;
     z-index: -1;
     right: 50%;
-    bottom: 100px;
+    bottom: 118px;
 
     display: block;
 
-    width: 726px;
-    height: 475px;
-    margin-right: -720px;
+    width: 964px;
+    height: 473px;
+    margin-right: -960px;
 
     pointer-events: none;
 }
@@ -2353,7 +2389,7 @@ header .mob_socials .whatsapp_link .icon
 ------------*/
 .prices
 {
-    margin-bottom: 32px;
+    margin-bottom: 60px;
 }
 
 
@@ -2467,6 +2503,7 @@ header .mob_socials .whatsapp_link .icon
     position: relative;
     z-index: 3;
 
+    padding-top: 24px;
     padding-bottom: 155px;
 }
 
@@ -2659,9 +2696,9 @@ header .mob_socials .whatsapp_link .icon
     position: relative;
     z-index: 3;
 
-    margin-bottom: 38px;
-    padding-top: 215px;
-    padding-bottom: 164px;
+    margin-bottom: 12px;
+    padding-top: 209px;
+    padding-bottom: 220px;
 }
 
 
@@ -2669,16 +2706,13 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -2;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1440px;
-    height: 778px;
-    margin: auto;
+    width: auto;
+    height: 100%;
 
-    object-position: 50% 100%;
-    object-fit: cover;
+    transform: translateX(-50%);
 }
 
 
@@ -2734,25 +2768,9 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 690px;
-    height: 466px;
-    margin-right: -720px;
-
-    pointer-events: none;
-}
-
-
-.about_head .mob_img
-{
-    position: absolute;
-    z-index: -1;
-    right: -53px;
-    bottom: 10px;
-
-    display: none;
-
-    width: 411px;
-    height: 475px;
+    width: 929px;
+    height: 481px;
+    margin-right: -960px;
 
     pointer-events: none;
 }
@@ -2962,13 +2980,13 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 50%;
     left: 50%;
 
-    width: 1440px;
-    height: 510px;
+    width: 1920px;
+    height: 559px;
 
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -3136,9 +3154,20 @@ header .mob_socials .whatsapp_link .icon
     flex-wrap: wrap;
 }
 
-.quote_block.no_pad
+.quote_block.no_margin
 {
-    margin-top: -193px;
+    margin: 0;
+}
+
+.quote_block.min_h
+{
+    min-height: 559px;
+}
+
+
+.order_form + .quote_block
+{
+    margin-top: -220px;
 }
 
 
@@ -3146,15 +3175,26 @@ header .mob_socials .whatsapp_link .icon
 {
     position: absolute;
     z-index: -1;
-    top: 0;
-    bottom: 0;
+    top: 50%;
     left: 50%;
 
-    width: 1440px;
-    height: 100%;
-    margin: auto;
+    width: auto;
+    height: 679px;
 
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+}
+
+.quote_block .bg2
+{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: 559px;
+
+    transform: translate(-50%, -50%);
 }
 
 
@@ -3193,6 +3233,11 @@ header .mob_socials .whatsapp_link .icon
     padding-top: 86px;
 
     text-align: center;
+}
+
+.quote_block .data.margin
+{
+    margin-bottom: 24px;
 }
 
 .quote_block .data > * + *
@@ -3413,7 +3458,7 @@ header .mob_socials .whatsapp_link .icon
 ------------------*/
 .service_info
 {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 
 
@@ -4079,10 +4124,10 @@ header .mob_socials .whatsapp_link .icon
 
     overflow: hidden;
 
-    width: 1440px;
+    width: 1920px;
     max-width: 100%;
-    height: 625px;
-    margin: -212px auto -84px;
+    height: 720px;
+    margin: -212px auto 0;
 
     background: #ddd;
 }

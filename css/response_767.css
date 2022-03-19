@@ -128,16 +128,14 @@
     .page_head .contacts
     {
         margin-top: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
 
     .page_head .img
     {
-        right: -228px;
+        right: -448px;
         bottom: 14px;
-
-        margin: 0;
     }
 
 
@@ -206,16 +204,10 @@
     -------------------*/
     .first_section
     {
-        overflow: hidden;
-
-        margin-bottom: 46px;
         padding-top: 31px;
-        padding-bottom: 440px;
-
-        background: rgba(242, 247, 255, .7);
+        padding-bottom: 416px;
 
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
-        backdrop-filter: blur(100px);
     }
 
 
@@ -235,18 +227,10 @@
     }
 
 
-    .first_section .bg
-    {
-        display: none;
-    }
-
-
     .first_section .img
     {
-        right: -228px;
+        right: -448px;
         bottom: 14px;
-
-        margin: 0;
     }
 
 
@@ -420,6 +404,13 @@
         padding-bottom: 180px;
     }
 
+    .reviews:before
+    {
+        height: calc(100% + 96px);
+
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
 
     .reviews .text,
     .reviews .link
@@ -450,7 +441,8 @@
 
 
 
-    .services .service
+    .services .service,
+    .services .service:hover
     {
         padding: 0;
 
@@ -519,25 +511,25 @@
         clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .quote_block.mini
+    .quote_block.mob_margin
     {
-        min-height: 0;
+        margin-top: 32px;
     }
 
-    .quote_block.no_pad
+    .order_form + .quote_block
     {
-        margin-top: -44px;
-    }
-
-    .quote_block.mob_no_margin
-    {
-        margin-bottom: 0;
+        margin-top: -46px;
     }
 
 
     .quote_block .data
     {
         width: 100%;
+    }
+
+    .quote_block .data.margin
+    {
+        margin: 0;
     }
 
     .quote_block .data br
@@ -547,7 +539,7 @@
 
 
     .quote_block .bg,
-    .quote_block .bg.mob_big
+    .quote_block .bg2
     {
         display: none;
     }
@@ -586,6 +578,7 @@
     ----------------*/
     .order_form
     {
+        margin-bottom: 0;
         padding: 40px 0 80px;
 
         background: #f9fafc;
@@ -612,8 +605,8 @@
     --------------*/
     .map_wrap
     {
-        margin-top: -118px;
-        margin-bottom: -60px;
+        margin-top: -60px;
+        margin-bottom: 0;
     }
 
 
@@ -676,8 +669,9 @@
     {
         overflow: hidden;
 
+        margin-bottom: 46px;
         padding-top: 31px;
-        padding-bottom: 380px;
+        padding-bottom: 312px;
 
         background: rgba(242, 247, 255, .7);
 
@@ -694,10 +688,8 @@
 
     .about_head .img
     {
-        right: -228px;
+        right: -448px;
         bottom: 14px;
-
-        margin: 0;
     }
 
 
@@ -728,7 +720,7 @@
     -----------*/
     .stats
     {
-        margin-bottom: 40px;
+        margin-bottom: 46px;
         padding: 100px 0 55px;
 
         background: #f9fafc;

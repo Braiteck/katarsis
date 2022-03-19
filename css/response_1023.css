@@ -160,9 +160,9 @@
     ---------------*/
     .page_head
     {
-        margin-bottom: 24px;
-        padding-top: 124px;
-        padding-bottom: 112px;
+        margin-bottom: 0;
+        padding-top: 112px;
+        padding-bottom: 140px;
     }
 
 
@@ -170,6 +170,12 @@
     {
         width: 1024px;
         height: 330px;
+    }
+
+    .page_head .bg2
+    {
+        width: auto;
+        height: 100%;
     }
 
 
@@ -183,18 +189,19 @@
     .page_head .contacts
     {
         margin-top: 52px;
-        margin-bottom: 0;
+        margin-bottom: 24px;
         padding: 0;
     }
 
 
     .page_head .img
     {
-        bottom: 81px;
+        right: -436px;
+        bottom: 124px;
 
-        width: 600px;
-        height: 405px;
-        margin-right: -604px;
+        width: 800px;
+        height: 414px;
+        margin-right: 0;
     }
 
 
@@ -265,36 +272,47 @@
     -------------------*/
     .first_section
     {
-        padding-top: 124px;
-        padding-bottom: 112px;
+        overflow: hidden;
+
+        margin-bottom: 46px;
+        padding-top: 120px;
+        padding-bottom: 80px;
+
+        background: rgba(242, 247, 255, .7);
+
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 92px), 0% 100%);
+        backdrop-filter: blur(100px);
     }
 
 
     .first_section .bg
     {
-        width: 1024px;
+        display: none;
     }
 
 
     .first_section .img
     {
-        bottom: 128px;
+        right: -436px;
+        bottom: 47px;
 
-        width: 600px;
-        height: 405px;
-        margin-right: -604px;
+        width: 800px;
+        height: 414px;
+        margin-right: 0;
     }
 
 
     .first_section .info
     {
-        width: 432px;
+        width: 100%;
     }
 
 
     .first_section .text_block
     {
-        margin-top: 24px;
+        width: 432px;
+        max-width: 100%;
+        margin-top: 28px;
     }
 
 
@@ -352,13 +370,8 @@
 
     .why .row .bg
     {
-        top: 0;
-        bottom: 0;
-
-        width: 1700px;
-        margin: auto;
-
-        object-fit: cover;
+        height: 780px;
+        margin-top: -8px;
     }
 
 
@@ -508,6 +521,7 @@
     -------------*/
     .reviews
     {
+        padding-top: 0;
         padding-bottom: 124px;
     }
 
@@ -574,14 +588,9 @@
         padding: 80px 0;
     }
 
-    .quote_block.mini
+    .order_form + .quote_block
     {
-        min-height: 360px;
-    }
-
-    .quote_block.no_pad
-    {
-        margin-top: -132px;
+        margin-top: -111px;
     }
 
 
@@ -593,8 +602,9 @@
 
     .quote_block .bg
     {
-        width: 1280px;
+        height: 600px;
     }
+
 
 
 
@@ -700,7 +710,8 @@
     ----------------*/
     .order_form
     {
-        padding: 52px 0 144px;
+        margin-bottom: -40px;
+        padding: 52px 0 160px;
     }
 
 
@@ -718,13 +729,12 @@
 
     .order_form .img
     {
-        bottom: 88px;
-    }
+        right: -420px;
+        bottom: 119px;
 
-
-    .order_form .img.img2
-    {
-        bottom: 60px;
+        width: 800px;
+        height: 393px;
+        margin-right: 0;
     }
 
 
@@ -734,7 +744,8 @@
     --------------*/
     .map_wrap
     {
-        margin-top: -152px;
+        height: 600px;
+        margin-top: -172px;
     }
 
 
@@ -794,9 +805,8 @@
     ----------------*/
     .about_head
     {
-        margin-bottom: 46px;
-        padding-top: 128px;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 152px;
     }
 
 
@@ -808,11 +818,12 @@
 
     .about_head .img
     {
-        bottom: 45px;
+        right: -400px;
+        bottom: 125px;
 
-        width: 600px;
-        height: 405px;
-        margin-right: -604px;
+        width: 800px;
+        height: 414px;
+        margin-right: 0;
     }
 
 
@@ -863,7 +874,7 @@
 
     .stats .bg
     {
-        top: -32px;
+        width: 1600px;
     }
 
 

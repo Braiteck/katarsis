@@ -67,9 +67,18 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head
+    {
+        margin-bottom: -36px;
+        padding-top: 172px;
+        padding-bottom: 172px;
+    }
+
+
     .page_head .bg
     {
-        width: 1280px;
+        width: auto;
+        height: 100%;
     }
 
 
@@ -95,9 +104,7 @@
 
     .page_head .img
     {
-        bottom: 93px;
-
-        margin-right: -660px;
+        bottom: 166px;
     }
 
 
@@ -156,26 +163,21 @@
     -------------------*/
     .first_section
     {
-        padding-top: 191px;
-        padding-bottom: 104px;
-    }
-
-
-    .first_section .bg
-    {
-        width: 1280px;
+        margin-bottom: 0;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
 
     .first_section .img
     {
-        bottom: 120px;
+        bottom: 192px;
     }
 
 
     .first_section .text_block
     {
-        margin-top: 28px;
+        margin-top: 32px;
     }
 
 
@@ -185,7 +187,7 @@
     ---------*/
     .why
     {
-        margin-bottom: 92px;
+        margin-bottom: 80px;
     }
 
 
@@ -239,10 +241,8 @@
 
     .why .row .bg
     {
-        top: -126px;
-
-        height: auto;
-        min-height: 100%;
+        height: 624px;
+        margin-top: -12px;
     }
 
 
@@ -482,23 +482,15 @@
         padding: 100px 0;
     }
 
-    .quote_block.mini
+    .order_form + .quote_block
     {
-        min-height: 444px;
-        margin-bottom: 24px;
-    }
-
-    .quote_block.no_pad
-    {
-        margin-top: -183px;
+        margin-top: -184px;
     }
 
 
-    .quote_block .bg
+    .quote_block.min_h
     {
-        bottom: -32px;
-
-        height: auto;
+        min-height: 500px;
     }
 
 
@@ -591,7 +583,9 @@
     ----------------*/
     .order_form
     {
-        padding: 64px 0 152px;
+        overflow: hidden;
+
+        padding: 64px 0 164px;
     }
 
 
@@ -608,16 +602,9 @@
     }
 
 
-    .order_form .bg
-    {
-        width: 1280px;
-        height: 100%;
-    }
-
-
     .order_form .img
     {
-        bottom: 82px;
+        bottom: 118px;
     }
 
 
@@ -627,7 +614,8 @@
     --------------*/
     .map_wrap
     {
-        margin: -160px auto -80px;
+        height: 640px;
+        margin-top: -190px;
     }
 
 
@@ -801,9 +789,9 @@
     ----------------*/
     .about_head
     {
-        margin-bottom: 40px;
-        padding-top: 200px;
-        padding-bottom: 108px;
+        margin-bottom: 0;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
 
@@ -839,18 +827,9 @@
     }
 
 
-    .about_head .bg
-    {
-        width: 1280px;
-        height: 100%;
-    }
-
-
     .about_head .img
     {
-        bottom: 57px;
-
-        margin-right: -700px;
+        bottom: 155px;
     }
 
 
@@ -944,7 +923,7 @@
 
     .stats .bg
     {
-        width: 1280px;
+        width: 1700px;
         height: auto;
     }
 
