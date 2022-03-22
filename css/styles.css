@@ -4097,7 +4097,8 @@ header .mob_socials .whatsapp_link .icon
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 374px;
+    max-width: 100%;
     padding: 32px;
 }
 

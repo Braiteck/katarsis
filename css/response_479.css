@@ -478,6 +478,17 @@
     }
 
 
+    .articles .grid .name
+    {
+        width: 366px;
+    }
+
+    .articles .grid .name br
+    {
+        display: none;
+    }
+
+
 
     /*-----------
         Certs
