@@ -65,7 +65,7 @@
         padding-top: 31px;
         padding-bottom: 380px;
 
-        background: rgba(242, 247, 255, .7);
+        background: #f3f8ff;
 
                 clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
