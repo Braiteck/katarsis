@@ -67,8 +67,7 @@
 
         background: #f3f8ff;
 
-                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
     }
 
     .page_head.big_pad
