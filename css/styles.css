@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -162,7 +163,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -421,7 +422,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
 }
 
 
@@ -881,6 +882,7 @@ header .order_btn
     font-weight: bold;
     line-height: 19px;
 
+    margin-right: 18px;
     margin-left: auto;
     padding: 9px 30px;
 
@@ -1176,6 +1178,11 @@ header .mob_socials .whatsapp_link .icon
     padding-bottom: 200px;
 }
 
+.page_head.big_pad
+{
+    padding-bottom: 240px;
+}
+
 
 .page_head .img
 {
@@ -1186,8 +1193,8 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 929px;
-    height: 481px;
+    width: 928px;
+    height: 466px;
     margin-right: -960px;
 
     pointer-events: none;
@@ -1238,8 +1245,6 @@ header .mob_socials .whatsapp_link .icon
 .breadcrumbs a
 {
     color: currentColor;
-
-    text-decoration: none;
 }
 
 .breadcrumbs .sep
@@ -1262,7 +1267,7 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 632px;
+    width: 656px;
     max-width: 100%;
     margin-bottom: 18px;
 }
@@ -1297,7 +1302,7 @@ header .mob_socials .whatsapp_link .icon
 {
     position: relative;
 
-    width: 418px;
+    width: 420px;
     max-width: 100%;
     margin-top: 24px;
     padding-left: 32px;
@@ -1389,12 +1394,17 @@ header .mob_socials .whatsapp_link .icon
 
     width: 100%;
     max-width: 100%;
-    margin-top: 4px;
+    margin-top: 18px;
 }
 
 .block_head .desc a
 {
     color: currentColor;
+}
+
+.block_head .desc a.no_line
+{
+    text-decoration: none;
 }
 
 
@@ -1723,6 +1733,18 @@ header .mob_socials .whatsapp_link .icon
 }
 
 
+.text_block .title
+{
+    color: #3c8f5d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+
+    margin-top: 32px;
+    margin-bottom: 25px;
+}
+
+
 .text_block img
 {
     display: block;
@@ -1762,7 +1784,7 @@ header .mob_socials .whatsapp_link .icon
 
     margin-top: 17px;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 
@@ -1885,6 +1907,7 @@ header .mob_socials .whatsapp_link .icon
 {
     width: 520px;
     max-width: 100%;
+    margin-left: 41px;
 }
 
 
@@ -1960,6 +1983,13 @@ header .mob_socials .whatsapp_link .icon
 }
 
 
+.why .block_head .title
+{
+    font-size: 32px;
+    line-height: calc(100% + 6px);
+}
+
+
 .why .row
 {
     position: relative;
@@ -2000,7 +2030,7 @@ header .mob_socials .whatsapp_link .icon
 {
     width: 341px;
     max-width: 100%;
-    margin-right: 197px;
+    margin-right: 214px;
 }
 
 
@@ -2016,7 +2046,7 @@ header .mob_socials .whatsapp_link .icon
 {
     width: 443px;
     max-width: 100%;
-    margin-right: 180px;
+    margin-right: 160px;
     margin-left: auto;
     padding-top: 12px;
 }
@@ -2025,7 +2055,7 @@ header .mob_socials .whatsapp_link .icon
 {
     width: 418px;
     max-width: 100%;
-    margin-left: 48px;
+    margin-left: 41px;
     padding-top: 108px;
 }
 
@@ -2251,14 +2281,15 @@ header .mob_socials .whatsapp_link .icon
 .advantages .item > *:before
 {
     color: #fff;
+    font-family: var(--font_family);
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 53px;
 
     position: absolute;
     z-index: 2;
     top: 8px;
-    right: 35px;
+    right: 32px;
     bottom: 0;
 
     width: 53px;
@@ -2314,7 +2345,7 @@ header .mob_socials .whatsapp_link .icon
 .advantages .item:nth-child(2n) > *:before
 {
     right: auto;
-    left: 13px;
+    left: 16px;
 }
 
 .advantages .item:nth-child(2n) > *:after
@@ -2432,7 +2463,7 @@ header .mob_socials .whatsapp_link .icon
 
 .prices table th
 {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
 }
 
 .prices table th .icon
@@ -2441,8 +2472,8 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin: auto;
 }
 
@@ -2453,7 +2484,8 @@ header .mob_socials .whatsapp_link .icon
     font-family: var(--font_family2);
     font-size: 14px;
 
-    padding: 8px 20px;
+    height: 30px;
+    padding: 5px 20px;
 
     text-align: left;
     vertical-align: middle;
@@ -2482,8 +2514,8 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 24px;
-    height: 24px;
+    width: 19px;
+    height: 19px;
     margin-left: auto;
 }
 
@@ -2557,8 +2589,8 @@ header .mob_socials .whatsapp_link .icon
 .reviews .swiper-container .slide
 {
     visibility: hidden;
+    /* transition: opacity .2s linear, visibility .2s linear; */
 
-    transition: opacity .2s linear, visibility .2s linear;
     pointer-events: none;
 
     opacity: 0;
@@ -2578,7 +2610,49 @@ header .mob_socials .whatsapp_link .icon
 {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+
     padding: 22px;
+
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(41, 41, 42, .07);
+}
+
+.reviews .data:before
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 20px;
+
+    content: '';
+
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+}
+
+.reviews .data:after
+{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
 
     background: #fff;
     box-shadow: 0 10px 20px rgba(41, 41, 42, .07);
@@ -2592,9 +2666,13 @@ header .mob_socials .whatsapp_link .icon
     font-size: 12px;
     line-height: 20px;
 
+    position: relative;
+    z-index: 3;
+
     text-align: justify;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    flex: 1 0 auto;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 
@@ -2605,11 +2683,14 @@ header .mob_socials .whatsapp_link .icon
     font-size: 12px;
     line-height: 20px;
 
+    position: relative;
+    z-index: 3;
+
     margin-top: 18px;
 
     text-align: right;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 .reviews .link a
@@ -2633,13 +2714,13 @@ header .mob_socials .whatsapp_link .icon
     color: #000;
     font-family: var(--font_family4);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 28px;
 
     margin-top: 28px;
 
     text-align: center;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 .reviews .author .name
@@ -2844,14 +2925,15 @@ header .mob_socials .whatsapp_link .icon
 .education .item:before
 {
     color: #fff;
+    font-family: var(--font_family);
     font-size: 22px;
     font-weight: bold;
     line-height: 26px;
 
     position: absolute;
     z-index: 2;
-    top: 7px;
-    left: -48px;
+    top: 8px;
+    left: -46px;
 
     width: 25px;
     height: 24px;
@@ -2994,7 +3076,7 @@ header .mob_socials .whatsapp_link .icon
 {
     margin-bottom: -32px;
     margin-left: -24px;
-    padding: 0 86px;
+    padding: 0 48px;
 
     justify-content: space-between;
 }
@@ -3041,7 +3123,8 @@ header .mob_socials .whatsapp_link .icon
 .clients .block_head .desc
 {
     width: 964px;
-    margin: 18px auto 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -3069,7 +3152,8 @@ header .mob_socials .whatsapp_link .icon
 .methods .block_head .desc
 {
     width: 964px;
-    margin: 18px auto 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -3121,6 +3205,12 @@ header .mob_socials .whatsapp_link .icon
 /*--------------------
     Important know
 --------------------*/
+.important_know .block_head
+{
+    margin-bottom: 40px;
+}
+
+
 .important_know .text_block
 {
     padding: 0 48px;
@@ -3237,7 +3327,7 @@ header .mob_socials .whatsapp_link .icon
 
 .quote_block .data.margin
 {
-    margin-bottom: 24px;
+    margin-bottom: 60px;
 }
 
 .quote_block .data > * + *
@@ -3359,8 +3449,8 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
 }
 
@@ -3388,8 +3478,8 @@ header .mob_socials .whatsapp_link .icon
 
     display: block;
 
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
 }
 
@@ -3570,7 +3660,7 @@ header .mob_socials .whatsapp_link .icon
 
 .service_info .section .col:first-child
 {
-    padding-top: 178px;
+    padding-top: 61px;
 }
 
 
@@ -3716,7 +3806,16 @@ header .mob_socials .whatsapp_link .icon
 
 .article_info .text_block
 {
+    font-size: 18px;
+    line-height: 24px;
+
     padding: 0 48px;
+}
+
+.article_info .text_block > *,
+.article_info .text_block .cols .col > *
+{
+    margin-bottom: 24px;
 }
 
 
@@ -4021,7 +4120,7 @@ header .mob_socials .whatsapp_link .icon
     font-weight: 900;
     line-height: calc(100% + 8px);
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 .articles .article .name a
@@ -4040,11 +4139,37 @@ header .mob_socials .whatsapp_link .icon
     font-family: var(--font_family4);
     font-size: 18px;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 26px;
 
     margin-top: 20px;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.articles .article .tags > * + *
+{
+    margin-top: 2px;
+}
+
+.articles .article .tags a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    margin: 0 -4px;
+    padding: 0 4px;
+
+    transition: .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.articles .article .tags a:hover
+{
+    color: #fff;
+
+    background: #64bc62;
 }
 
 
@@ -4097,9 +4222,14 @@ header .mob_socials .whatsapp_link .icon
     top: 0;
     left: 0;
 
-    width: 374px;
+    width: 384px;
     max-width: 100%;
     padding: 32px;
+}
+
+.articles .grid .name.big_w
+{
+    width: 500px;
 }
 
 
@@ -4179,7 +4309,7 @@ footer .action
     width: 899px;
     max-width: 100%;
     margin: -84px auto 38px;
-    padding: 56px 134px 50px 120px;
+    padding: 58px 134px 58px 120px;
 
     background: #3c8f5d;
 
@@ -4214,7 +4344,7 @@ footer .action .desc
     font-size: 14px;
     line-height: 16px;
 
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 
@@ -4280,7 +4410,7 @@ footer .socials a
     padding-bottom: 1px;
 
     border-radius: 50%;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
 
     justify-content: center;
     align-items: center;
@@ -4338,7 +4468,7 @@ footer .copyright
     max-width: 100%;
     margin-top: 20px;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 
@@ -4352,7 +4482,7 @@ footer .cont .title
 
     margin-bottom: 24px;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 
@@ -4391,7 +4521,7 @@ footer .links .items a
     vertical-align: top;
     text-decoration: none;
 
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-feature-settings: 'salt'on, 'liga'off;
 }
 
 
@@ -4594,8 +4724,8 @@ footer .contacts .time .icon
 
     display: block;
 
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -4607,9 +4737,9 @@ footer .bg
     right: 50%;
     bottom: 8px;
 
-    width: 274px;
-    height: 253px;
-    margin-right: -764px;
+    width: 307px;
+    height: 260px;
+    margin-right: -792px;
 }
 
 footer .mob_bg
@@ -4637,7 +4767,467 @@ footer .mob_bg
     padding: 40px 50px;
 
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+
+.modal_title
+{
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+}
+
+
+.modal_desc
+{
+    margin-top: 24px;
+
+    text-align: center;
+}
+
+ooter .action .title
+{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+
+footer .action .desc
+{
+    color: #fff;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-top: 12px;
+}
+
+
+footer .action .btn
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+
+    display: block;
+
+    padding: 8px 34px 10px;
+
+    transition: .2s linear;
+    text-align: center;
+
+    border: 2px solid #64bc62;
+    border-radius: 5px;
+    background: #64bc62;
+}
+
+footer .action .btn:hover
+{
+    background: transparent;
+}
+
+
+
+footer .col_left
+{
+    margin-left: 86px;
+}
+
+
+footer .logo img
+{
+    display: block;
+}
+
+
+
+footer .socials
+{
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .socials a
+{
+    color: #fff;
+
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+    padding-bottom: 1px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .1);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .socials a + a
+{
+    margin-left: 16px;
+}
+
+footer .socials .icon
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer .socials .instagram_link .icon
+{
+    width: 14px;
+    height: 14px;
+}
+
+footer .socials .youtube_link .icon
+{
+    width: 14px;
+    height: 11px;
+}
+
+footer .socials .telegram_link .icon
+{
+    width: 13px;
+    height: 11px;
+}
+
+footer .socials .whatsapp_link .icon
+{
+    width: 13px;
+    height: 13px;
+}
+
+
+
+footer .copyright
+{
+    color: #d9dbe1;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 18px;
+
+    width: 185px;
+    max-width: 100%;
+    margin-top: 20px;
+
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+
+
+footer .cont .title
+{
+    color: #fff;
+    font-family: var(--font_family);
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 24px;
+
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+
+
+footer .links .items
+{
+    width: 292px;
+
+    column-gap: 20px;
+    column-count: 2;
+}
+
+footer .links .items > *
+{
+    transform: translateZ(0);
+
+    --webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+footer .links .items > * + *
+{
+    margin-top: 16px;
+}
+
+footer .links .items a
+{
+    color: #d9dbe1;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 16px;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+
+
+footer .contacts
+{
+    color: #d9dbe1;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-right: 86px;
+}
+
+
+footer .contacts .cols
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .contacts .col + .col
+{
+    margin-left: 30px;
+}
+
+
+footer .contacts .email
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    padding-left: 34px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contacts .email .icon
+{
+    color: #64bc62;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+footer .contacts .email a
+{
+    color: currentColor;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+footer .contacts .skype
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    margin-top: 16px;
+    padding-left: 34px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contacts .skype .icon
+{
+    color: #64bc62;
+
+    position: absolute;
+    top: 2px;
+    left: 3px;
+
+    display: block;
+
+    width: 19px;
+    height: 19px;
+}
+
+footer .contacts .skype a
+{
+    color: currentColor;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+footer .contacts .phone
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    margin-top: 16px;
+    padding-left: 34px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contacts .phone .icon
+{
+    color: #64bc62;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+footer .contacts .phone a
+{
+    color: currentColor;
+
+    white-space: nowrap;
+}
+
+
+footer .contacts .location
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    padding-left: 34px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contacts .location .icon
+{
+    color: #64bc62;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+footer .contacts .time
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    margin-top: 16px;
+    padding-left: 34px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contacts .time .icon
+{
+    color: #64bc62;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+
+
+footer .bg
+{
+    position: absolute;
+    z-index: -1;
+    right: 50%;
+    bottom: 8px;
+
+    width: 307px;
+    height: 260px;
+    margin-right: -792px;
+}
+
+footer .mob_bg
+{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+}
+
+
+
+/*-----------
+    PopUp
+-----------*/
+.modal
+{
+    display: none;
+    visibility: visible !important;
+
+    width: 480px;
+    max-width: 100%;
+    padding: 40px 50px;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 

@@ -1,4 +1,5 @@
-@media print, (max-width: 767px)
+@media print,
+(max-width: 767px)
 {
     /*-------------------
         Global styles
@@ -69,6 +70,12 @@
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
         backdrop-filter: blur(100px);
     }
+
+    .page_head.big_pad
+    {
+        padding-bottom: 392px;
+    }
+
 
     .page_head.mob_min_pad
     {
@@ -198,6 +205,15 @@
     }
 
 
+    .text_block .title
+    {
+        font-size: 24px;
+        line-height: 29px;
+
+        margin-bottom: 20px;
+    }
+
+
 
     /*-------------------
         First section
@@ -220,6 +236,8 @@
     .first_section .link
     {
         color: #64bc62;
+        font-size: 22px;
+        line-height: 26px;
 
         width: 100%;
 
@@ -294,6 +312,9 @@
 
     .why .data .link
     {
+        font-size: 22px;
+        line-height: 26px;
+
         width: 100%;
     }
 
@@ -334,6 +355,13 @@
     }
 
 
+    .result .order .btn
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
 
     /*----------------
         Advantages
@@ -352,9 +380,9 @@
         font-size: 36px;
         line-height: 50px;
 
-        top: 0;
+        top: 2px;
         bottom: auto;
-        left: 4px;
+        left: 0;
     }
 
     .advantages .item > *:after,
@@ -397,6 +425,12 @@
         line-height: 22px;
     }
 
+    .prices table td .icon
+    {
+        position: relative;
+        left: 12px;
+    }
+
 
 
     /*-------------
@@ -415,6 +449,13 @@
     }
 
 
+    .reviews .img
+    {
+        top: 92px;
+        right: -80px;
+    }
+
+
     .reviews .text,
     .reviews .link
     {
@@ -425,6 +466,15 @@
     .reviews .text
     {
         text-align: left;
+    }
+
+
+    .reviews .all_link a
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        width: 100%;
     }
 
 
@@ -474,11 +524,20 @@
     }
 
 
+    .services .service .desc
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
     .services .service .time,
     .services .service .price
     {
         font-size: 18px;
         line-height: 100%;
+
+        margin-top: 20px;
     }
 
     .services .service .price
@@ -560,6 +619,12 @@
         text-align: center;
     }
 
+
+    .service_info .section .name
+    {
+        color: #000;
+        font-weight: 700;
+    }
 
     .service_info .section .name,
     .service_info .section .name b

@@ -1,4 +1,5 @@
-@media print, (max-width: 1023px)
+@media print,
+(max-width: 1023px)
 {
     /*-------------------
         Global styles
@@ -127,8 +128,10 @@
 
     header .menu .item > a
     {
+        color: #9893a3;
+        font-family: var(--font_family);
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 24px;
 
         position: relative;
@@ -136,11 +139,65 @@
         text-align: center;
     }
 
+    header .menu .item > a:after
+    {
+        position: absolute;
+        right: 0;
+        bottom: -13px;
+        left: 0;
+
+        width: 0;
+        height: 4px;
+        margin: auto;
+
+        content: '';
+        transition: width .3s linear;
+        pointer-events: none;
+
+        background: #3c8f5d;
+    }
+
+    header .menu .item > a:hover:after,
+    header .menu .item > a.active:after
+    {
+        width: 60px;
+    }
+
+
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin-top: 24px;
+
+        text-align: center;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+    header .menu .sub_menu a
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
 
     header .order_btn
     {
+        font-size: 18px;
+        line-height: 22px;
+
         width: 240px;
-        margin: 52px auto 0;
+        height: 49px;
+        margin: 56px auto 0;
     }
 
 
@@ -163,6 +220,11 @@
         margin-bottom: 0;
         padding-top: 112px;
         padding-bottom: 140px;
+    }
+
+    .page_head.big_pad
+    {
+        padding-bottom: 144px;
     }
 
 
@@ -200,7 +262,7 @@
         bottom: 124px;
 
         width: 800px;
-        height: 414px;
+        height: 402px;
         margin-right: 0;
     }
 
@@ -305,6 +367,7 @@
     .first_section .info
     {
         width: 100%;
+        margin-left: 0;
     }
 
 
@@ -591,6 +654,12 @@
     .order_form + .quote_block
     {
         margin-top: -111px;
+    }
+
+
+    .quote_block .data.margin
+    {
+        margin-bottom: 12px;
     }
 
 

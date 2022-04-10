@@ -415,6 +415,9 @@
 
     .prices table td .icon
     {
+        top: -12px;
+        left: 0;
+
         margin-top: -24px;
     }
 
