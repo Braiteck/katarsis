@@ -1736,8 +1736,9 @@ header .mob_socials .whatsapp_link .icon
 .text_block .title
 {
     color: #3c8f5d;
+    font-family: var(--font_family);
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 26px;
 
     margin-top: 32px;
