@@ -108,24 +108,13 @@
     }
 
 
-    .page_title
-    {
-        width: 100%;
-        margin-bottom: 0;
-    }
-
+    .page_title,
     .page_title.mob_full_w
     {
         width: 100%;
     }
 
     .page_title br
-    {
-        display: none;
-    }
-
-
-    .breadcrumbs
     {
         display: none;
     }
