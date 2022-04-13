@@ -701,11 +701,6 @@
         width: 100%;
     }
 
-    .service_info .section .col:first-child
-    {
-        padding-top: 0;
-    }
-
     .service_info .section .col + .col
     {
         margin-top: 52px;
