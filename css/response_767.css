@@ -108,6 +108,13 @@
     }
 
 
+    .breadcrumbs
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
     .page_title,
     .page_title.mob_full_w
     {
@@ -224,7 +231,7 @@
     .first_section .link
     {
         color: #64bc62;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
 
         width: 100%;
@@ -300,7 +307,7 @@
 
     .why .data .link
     {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
 
         width: 100%;
@@ -345,7 +352,7 @@
 
     .result .order .btn
     {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
     }
 
@@ -459,7 +466,7 @@
 
     .reviews .all_link a
     {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
 
         width: 100%;
@@ -547,6 +554,13 @@
     }
 
 
+    .services .service .link a
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
 
     /*-----------------
         Quote block
@@ -599,6 +613,14 @@
     /*------------------
         Service info
     ------------------*/
+    .service_info .info .time,
+    .service_info .info .price
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
     .service_info .section .title
     {
         font-size: 22px;
@@ -901,12 +923,15 @@
 
     footer .action .desc
     {
+        font-size: 18px;
+        line-height: 24px;
+
         margin-top: 26px;
     }
 
     footer .action .btn
     {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
 
         width: 100%;

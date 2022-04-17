@@ -61,7 +61,7 @@
     header .order_btn
     {
         margin-right: 0;
-        padding: 8px 20px;
+        padding: 8px 30px 9px;
     }
 
 
@@ -469,11 +469,6 @@
     .services .service .link
     {
         margin-top: 24px;
-    }
-
-    .services .service .link a
-    {
-        padding: 8px 18px;
     }
 
 
