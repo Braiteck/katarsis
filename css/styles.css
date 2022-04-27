@@ -187,8 +187,7 @@ input[type=number]
     --font_size_title: 36px;
     --font_family: 'MuseoSansCyrl', 'Arial', sans-serif;
     --font_family2: 'Roboto Slab', 'Arial', sans-serif;
-    --font_family3: 'Open Sans', 'Arial', sans-serif;
-    --font_family4: 'Inter', 'Arial', sans-serif;
+    --font_family3: 'Inter', 'Arial', sans-serif;
 }
 
 
@@ -1277,8 +1276,8 @@ header .mob_socials .whatsapp_link .icon
 .page_head .contacts
 {
     font-family: var(--font_family2);
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 24px;
 
     margin-top: 80px;
     padding: 0 48px;
@@ -1302,7 +1301,7 @@ header .mob_socials .whatsapp_link .icon
 {
     position: relative;
 
-    width: 420px;
+    width: 524px;
     max-width: 100%;
     margin-top: 24px;
     padding-left: 32px;
@@ -1325,9 +1324,9 @@ header .mob_socials .whatsapp_link .icon
 .page_head .notice .text
 {
     color: #64bc62;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 24px;
 
     position: relative;
 
@@ -2253,9 +2252,9 @@ header .mob_socials .whatsapp_link .icon
 
 .advantages .item
 {
-    font-family: var(--font_family3);
+    font-family: var(--font_family2);
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18px;
 
     display: flex;
 
@@ -2711,9 +2710,9 @@ header .mob_socials .whatsapp_link .icon
 .reviews .author
 {
     color: #000;
-    font-family: var(--font_family4);
+    font-family: var(--font_family3);
     font-size: 14px;
-    line-height: 28px;
+    line-height: 24px;
 
     margin-top: 28px;
 
@@ -4133,7 +4132,7 @@ header .mob_socials .whatsapp_link .icon
 
 .articles .article .tags
 {
-    font-family: var(--font_family4);
+    font-family: var(--font_family3);
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
