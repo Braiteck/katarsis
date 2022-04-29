@@ -129,8 +129,18 @@
 
     .page_head .contacts
     {
+        font-size: 18px;
+        line-height: 24px;
+
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+
+    .page_head .notice .text
+    {
+        font-size: 18px;
+        line-height: 24px;
     }
 
 

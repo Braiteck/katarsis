@@ -1276,8 +1276,8 @@ header .mob_socials .whatsapp_link .icon
 .page_head .contacts
 {
     font-family: var(--font_family2);
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
 
     margin-top: 80px;
     padding: 0 48px;
@@ -1301,7 +1301,7 @@ header .mob_socials .whatsapp_link .icon
 {
     position: relative;
 
-    width: 524px;
+    width: 420px;
     max-width: 100%;
     margin-top: 24px;
     padding-left: 32px;
@@ -1324,9 +1324,9 @@ header .mob_socials .whatsapp_link .icon
 .page_head .notice .text
 {
     color: #64bc62;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 18px;
 
     position: relative;
 
@@ -3067,8 +3067,8 @@ header .mob_socials .whatsapp_link .icon
     top: 50%;
     left: 50%;
 
-    width: 1920px;
-    height: 559px;
+    width: auto;
+    height: 571px;
 
     transform: translate(-50%, -50%);
 }
@@ -3253,17 +3253,18 @@ header .mob_socials .whatsapp_link .icon
 
 .quote_block.min_h
 {
-    min-height: 559px;
+    min-height: 571px;
 }
 
 
 .order_form + .quote_block
 {
-    margin-top: -220px;
+    margin-top: -240px;
 }
 
 
-.quote_block .bg
+.quote_block .bg,
+.quote_block .bg2
 {
     position: absolute;
     z-index: -1;
@@ -3278,15 +3279,7 @@ header .mob_socials .whatsapp_link .icon
 
 .quote_block .bg2
 {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-
-    width: auto;
-    height: 559px;
-
-    transform: translate(-50%, -50%);
+    height: 571px;
 }
 
 
