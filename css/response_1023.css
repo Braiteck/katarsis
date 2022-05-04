@@ -164,6 +164,7 @@
     }
 
 
+    header .menu .item .sub_menu,
     header .menu .item:hover .sub_menu
     {
         position: relative;
