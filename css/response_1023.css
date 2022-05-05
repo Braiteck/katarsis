@@ -193,8 +193,8 @@
 
     header .menu .sub_menu a
     {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 22px;
     }
 
 
@@ -801,10 +801,10 @@
     .order_form .img
     {
         right: -420px;
-        bottom: 119px;
+        bottom: 127px;
 
         width: 800px;
-        height: 393px;
+        height: 389px;
         margin-right: 0;
     }
 

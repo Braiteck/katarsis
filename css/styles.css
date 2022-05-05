@@ -2385,12 +2385,12 @@ header .mob_socials .whatsapp_link .icon
     position: absolute;
     z-index: -1;
     right: 50%;
-    bottom: 118px;
+    bottom: 124px;
 
     display: block;
 
-    width: 964px;
-    height: 473px;
+    width: 978px;
+    height: 475px;
     margin-right: -960px;
 
     pointer-events: none;
